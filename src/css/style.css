@@ -1,0 +1,199 @@
+/* Ajuste en medidas a etiquetas generales */
+
+html, body {
+  height: 100%;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+h2{
+  font-size: 48px; 
+  color: #8d6e63; 
+  font-weight: bold;
+}
+
+/* Ajuste en medidas en el apartado del nav */
+
+.nav-wrapper li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-wrapper {
+  line-height: 80px;
+  background-color: #C0803A; 
+  height: 80px; 
+  z-index: 9999; 
+  width: 100%; 
+  position: fixed;
+}
+
+.card{
+  background-color: #fff; 
+  border-radius: 20px; 
+  padding: 50px;
+}
+
+.background.col.s12 {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  height: 780px;
+  position: relative;
+}
+
+/* Apartado de creación de un fondo con lineas intercambiadas para las secciones 1, 3 y 5 */
+
+.background-section {
+  background-image: repeating-linear-gradient(-45deg, #8B4513, #8B4513 40px, #CD853F 40px, #CD853F 80px);
+}
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:100%;
+}
+
+.custom-background {
+  background-color: #dbd6d2;
+  background-size: 40px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Ajustes para la posición correcta del mapa */
+.gmap_canvas {
+  overflow:hidden;
+  background:none;
+  height:400px;
+  width:100%;
+}
+
+.page-footer{
+  background-color: #3b271d;
+}
+
+.dark-mode {
+  color: #ffffff;
+  border-color: #362b2b;
+}
+
+.card.dark-mode {
+  background-color: #362b2b;
+}
+
+.card-title.dark-mode {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content.dark-mode {
+  font-size: 14px;
+}
+
+.card-button.dark-mode {
+  background-color: #ffffff;
+  color: #362b2b;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button.dark-mode:hover {
+  background-color: #dddddd;
+}
+
+.nav-wrapper.dark-mode {
+  background-color: #362b2b;
+}
+
+.nav-wrapper.dark-mode .logo-text {
+  background-color: #362b2b;
+}
+
+.nav-wrapper.dark-mode h5 span {
+  color: #ffffff;
+}
+
+.nav-wrapper.dark-mode ul li a {
+  color: #ffffff;
+}
+
+.nav-wrapper.dark-mode ul li a:hover {
+  background-color: #dddddd;
+}
+
+.background-section.dark-mode {
+  background-image: repeating-linear-gradient(-45deg, #2f2626, #2f2626 40px, #453939 40px, #453939 80px);
+}
+
+.page-footer.dark-mode {
+  background-color: #362b2b;
+}
+
+.custom-background.dark-mode {
+  background-color: #3c3535;
+}
+.background.col.s12.dark-mode{
+  background-image: url('../img/fondo-dark.jpg');
+}
+
+h2.dark-mode {
+  color: #ffffff;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.table {
+  font-size: 15px;
+  max-width: 20%;
+  overflow-x: auto;
+}
+
+.table thead th {
+  font-weight: bold;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input[type="checkbox"].filled-in:checked + .checkmark:after {
+  display: block;
+  width: 6px;
+  height: 11px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 1px;
+}

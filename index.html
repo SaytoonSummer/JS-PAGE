@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/4a2e2e/tea.png">
+    <!-- Enlace al archivo de estilo reset.css -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <!-- Enlace al archivo de estilo materialize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Enlace al archivo a mystyle.css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Enlace al archivo de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Enlace al archivo de jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>    
+    <!-- Enlace al archivo de js materialize.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+</head>
+<body>
+<!-- Barra de navegación -->
+  <nav class="nav-wrapper">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo" style="display: flex; align-items: center;">
+        <div class="logo-text" style="background-color: #ffffff; height: 80px; display: flex; justify-content: center; align-items: center; position: absolute; left: 0; width: 30%;">
+          <img src="https://img.icons8.com/ios-filled/50/000000/tea.png" style="width: 30px; margin-right: 10px; position: relative; z-index: 1;" />
+          <h5 style="font-family: 'Montserrat', sans-serif; font-size: 36px; margin: 0;">
+            <span style="color: #5B5B5B;">Newen</span><span style="color: #eaa45a;"> repü</span>
+          </h5>
+        </div>
+      </div>
+      <div class="nav-items" style="display: flex; align-items: center;">
+        <ul>
+          <li><a href="#Nosotros" class="smooth-scroll" style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Nosotros</a></li>
+          <li><a href="#Catalogo" class="smooth-scroll" style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Catálogo</a></li>
+          <li><a href="#Contacto" class="smooth-scroll" style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Contacto</a></li>
+          <li><a href="#Clientes" class="smooth-scroll" style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Clientes</a></li>
+          <li><a href="#Video" class="smooth-scroll" style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Vídeo</a></li>
+        </ul>
+      </div>
+    </div>
+      <button id="mode-switch" style="background-color: #FFFFFF; color: #000000;">Cambiar Color</button>
+    </div>
+  </nav>
+    <!-- Sección Main -->
+    <section id="seccionmain">
+      <!-- Contenido de la sección main -->
+      <div class="custom-background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="background col s12">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; opacity: 0.8; background-color: rgba(255, 255, 255, 0.6); text-align: center;">
+            <img src="src/img/Imagén Newenrepu.png" style="max-width: 20%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sección 1 -->
+      <section class="background-section" id="Nosotros">
+        <!-- Contenido de la sección 1 -->
+        <div class="container">
+          <div class="row">
+            <div class="col s12 center-align" >
+              <div class="card lighten-5" style="border-radius: 20px;">
+                <div class="card-content center-align">
+                  <h2>Nosotros</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m8 offset-m2">
+              <div class="card">
+                <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+                  <p>Newen Repü es una empresa dedicada a producir té de máxima calidad a precios accesibles para todo público. Nuestra producción tiene como base elaborar té y blends de forma sustentable, ya que integramos un modelo de economía circular, recolectando cáscaras y otros elementos vegetales de colaboradores que en primera instancia desecharían únicamente por no tener dónde utilizarlas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Sección 2 -->
+     <section id="Catalogo">
+      <!-- Contenido de la sección 2 -->
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align" >
+            <div class="card lighten-5" style="border-radius: 20px;">
+              <div class="card-content center-align">
+                <h2>Catálogo</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l4">
+            <div class="card">
+              <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+                <img class="responsive-img" src="src/img/te1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col l4">
+            <div class="card">
+              <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+                <img class="responsive-img" src="src/img/te2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col l4">
+            <div class="card">
+              <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+                <img class="responsive-img" src="src/img/te3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card">
+            <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+              <p>A exposición alguno de nuestros productos. Deleita nuestros sabores en una presentación simple y práctica, ideal para quienes disfrutan de tomar té a menudo. Formatos disponibles para toda la variedad de nuestras líneas Té Selección y Té Gourmet. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Sección 3 -->
+     <section class="background-section" id="Contacto">
+      <!-- Contenido de la sección 3 -->
+<!-- Contenido de la sección 3 -->
+<div class="container">
+  <div class="row">
+    <div class="col s12 center-align">
+      <div class="card lighten-5" style="border-radius: 20px;">
+        <div class="card-content center-align">
+          <h2>Pedido a Domicilio</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m10 offset-m1">
+      <div class="card">
+        <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #1a1918;">
+          <form id="myform" class="col s12">
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="firstname" type="text" required>
+                <label for="firstname">Nombre *</label>
+                <span class="error" id="error-firstname"></span>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="lastname" type="text" required>
+                <label for="lastname">Apellido *</label>
+                <span class="error" id="error-lastname"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="email" type="email" required>
+                <label for="email">Correo Electrónico *</label>
+                <span class="error" id="error-email"></span>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="tel" type="tel">
+                <label for="phone">Teléfono</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="date" type="text" class="datepicker" required>
+                <label for="date">Fecha *</label>
+                <span class="error" id="error-date"></span>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="address" type="text" required>
+                <label for="address">Dirección *</label>
+                <span class="error" id="error-address"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input type="number" id="age" name="age" required>
+                <label for="age">Edad *</label>
+                <span class="error" id="error-age"></span>
+              </div>
+              <div class="input-field col s12 m6">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Mensaje</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <label>Tipo de té:</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <label>
+                  <input type="radio" name="tea" value="Jasmine Tea">
+                  <span>Té de Jazmín</span>
+                </label>
+              </div>
+              <div class="input-field col s4">
+                <label>
+                  <input type="radio" name="tea" value="Red Apple & Cinnamon Tea">
+                  <span>Té de Manzana Roja & Canela</span>
+                </label>
+              </div>
+              <div class="input-field col s4">
+                <label>
+                  <input type="radio" name="tea" value="Green Tea">
+                  <span>Té Verde</span>
+                </label>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col s12 center-align">
+                <button id="submit" class="btn waves-effect waves-light" type="submit" type="button" name="action">Enviar</button>
+                <button type="button" id="clearBtn" class="btn waves-effect waves-light">Limpiar</button>
+              </div>
+            </div>
+          </form>
+          
+          <div class="table-responsive">
+            <table id="tbody" class="table table-bordered table-striped">
+              <tbody id="tabla-usuarios">
+                <!-- Filas de usuarios se agregan dinámicamente aquí -->
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+    </section>
+     <!-- Sección 4 -->
+     <section id="Clientes">
+      <!-- Contenido de la sección 4 -->
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align" >
+            <div class="card lighten-5" style="border-radius: 20px;">
+              <div class="card-content center-align">
+                <h2>Clientes</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="card">
+              <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 24px;">
+                ¿Quieres tomar un té antes de trabajar? ¿Pasaste al supermercado y buscas buen té? Búscanos en los locales de nuestros clientes asociados. Newen Repü presente en todos lados. A continuación uno de nuestros locales:
+                <br><br>
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Nueva%20Providencia%202214,%20Providencia,%20Santiago,%20Regi%C3%B3n%20Metropolitana&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+     <!-- Sección 5 -->
+     <section class="background-section" id="Video">
+      <!-- Contenido de la sección 5 -->
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align" >
+            <div class="card lighten-5" style="border-radius: 20px;">
+              <div class="card-content center-align">
+                <h2>Vídeo</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="card">
+              <div class="card-content center-align" style="font-family: 'Montserrat', sans-serif; font-size: 18px;">
+                <h4>En este apartado, se mostrará a una de nuestras colaboradoras hablando sobre la exposición que se hizo en una anterior feria sobre nuestros productos</h4>
+              </div>
+              <div class="responsive-video card-content center-align">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UJUF8tQXkLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+     <!-- Pie de página -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <img src="src/img/footer.png" alt="Logo de Newen Repu" class="responsive-img" style="margin-top: 10px; margin-left: -10px;">
+          </div>
+          <div class="col s12 m6 l3 offset-l6">
+            <h5 class="white-text">Redes sociales</h5>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/newenrepu_te_gourmet" class="white-text" target="_blank">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/newenrepu" class="white-text" target="_blank">
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://api.whatsapp.com/send/?phone=56920883198&text&type=phone_number&app_absent=0" class="white-text" target="_blank">
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container center">
+            <div class="row">
+              <div class="col s12">
+                <p class="grey-text text-lighten-4">Copyright © 2023 
+                  <a href="#" class="white-text">Newen Repu</a> | Todos los derechos reservados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="src/js/functions.js"></script>  
+  <script>
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+
+    $(document).ready(function() {
+    $('.smooth-scroll').click(function(event) {
+      event.preventDefault();
+      var target = $(this).attr("href");
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 800);
+    });
+  });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.datepicker');
+      var options = {
+        format: 'yyyy-mm-dd', // Cambia el formato de la fecha según tus necesidades
+        // Añade otras opciones si lo deseas
+      };
+      var instances = M.Datepicker.init(elems, options);
+    });
+  </script>
+</body>
+</html>
