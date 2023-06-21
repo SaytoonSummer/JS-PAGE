@@ -1,6 +1,7 @@
 // Función de cambiar al modo oscuro
 $(document).ready(function() {
   function enableDarkMode() {
+    // Agregar clases "dark-mode" a varios elementos
     $('body').addClass('dark-mode');
     $('.card').addClass('dark-mode');
     $('.card-title').addClass('dark-mode');
@@ -20,6 +21,7 @@ $(document).ready(function() {
 
   // Cambiar al modo claro
   function disableDarkMode() {
+    // Eliminar clases "dark-mode" de los elementos
     $('body').removeClass('dark-mode');
     $('.card').removeClass('dark-mode');
     $('.card-title').removeClass('dark-mode');
@@ -36,7 +38,7 @@ $(document).ready(function() {
     $('.background.col.s12').removeClass('dark-mode');
   }
 
-  //Esctructura If, encargada 
+  // Esctructura If, encargada de cambiar entre modos
   $('#mode-switch').click(function() {
     if ($('body').hasClass('dark-mode')) {
       disableDarkMode();
@@ -46,17 +48,21 @@ $(document).ready(function() {
   });
 });
 
+// Arreglo para almacenar datos del formulario
 var formData = [];
 
+// Obtener referencias a los elementos del DOM
 var form = document.getElementById('myform'); // Actualiza el ID del formulario
 var dataTable = document.getElementById('tabla-usuarios'); // Actualiza el ID de la tabla de datos
 var submitButton = document.getElementById('submit'); // Actualiza el ID del botón de enviar
 var clearBtn = document.getElementById('clearBtn');
 var editIndex = -1;
 
+// Evento submit del formulario
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   
+  // Obtener los valores de los campos del formulario
   var name = document.getElementById('firstname').value;
   var lastName = document.getElementById('lastname').value;
   var email = document.getElementById('email').value;
@@ -67,7 +73,9 @@ form.addEventListener('submit', function(event) {
   var message = document.getElementById('message').value;
   var tea = document.querySelector('input[name="tea"]:checked');
 
+  // Validar los campos obligatorios
   if (name && lastName && email && tel && age && address && date) {
+    // Crear un objeto con los datos del formulario
     var data = {
       name: name,
       lastName: lastName,
@@ -80,6 +88,7 @@ form.addEventListener('submit', function(event) {
       tea: tea ? tea.value : ""
     };
 
+    // Agregar el objeto al arreglo formData
     if (editIndex === -1) {
       formData.push(data);
     } else {
@@ -88,6 +97,7 @@ form.addEventListener('submit', function(event) {
       editIndex = -1;
     }
 
+    // Actualizar la tabla de datos
     renderTable();
     form.reset();
   } else {
@@ -95,12 +105,14 @@ form.addEventListener('submit', function(event) {
   }
 });
 
+// Evento click del botón "Limpiar"
 clearBtn.addEventListener('click', function() {
   form.reset();
   submitButton.textContent = 'Enviar';
   editIndex = -1;
 });
 
+// Función para renderizar la tabla de datos
 function renderTable() {
   dataTable.innerHTML = '';
   for (var i = 0; i < formData.length; i++) {
@@ -123,6 +135,7 @@ function renderTable() {
   }
 }
 
+// Función para editar un registro de la tabla
 window.editData = function(index) {
   var data = formData[index];
   document.getElementById('firstname').value = data.name;
@@ -155,6 +168,7 @@ window.editData = function(index) {
   }
 };
 
+// Función para eliminar un registro de la tabla
 window.deleteData = function(index) {
   if (confirm('¿Estás seguro de que deseas eliminar este registro?')) {
     formData.splice(index, 1);
@@ -163,21 +177,11 @@ window.deleteData = function(index) {
     submitButton.textContent = 'Enviar';
     editIndex = -1;
     
-    // Desbloquear todos los campos
-    var formInputs = form.getElementsByTagName('input');
-    for (var i = 0; i < formInputs.length; i++) {
-      formInputs[i].disabled = false;
-    }
-    
-    var formTextareas = form.getElementsByTagName('textarea');
-    for (var i = 0; i < formTextareas.length; i++) {
-      formTextareas[i].disabled = false;
     }
   }
-};
 
+// Evento click del botón de enviar
 submitButton.addEventListener('click', function(event) {
   event.preventDefault();
   form.dispatchEvent(new Event('submit'));
 });
-
